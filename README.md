@@ -15,3 +15,8 @@ Implemetation in
 
 Implemetation in 
 * [scala] (scala/Problem002.scala)
+
+[Problem 3](https://projecteuler.net/problem=3): Largest prime factor
+
+Implemetation in 
+* [scala] (scala/Problem003.scala)

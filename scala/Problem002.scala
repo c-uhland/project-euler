@@ -14,23 +14,9 @@ object Problem002 {
   
   def main(args: Array[String]): Unit = {
     
-    var result = sum(filter(fibList(), modN(2)))
+    var help = new Function()
+    var result = help.sum(help.filter(fibList(), help.modN(2)))
     println(result)
-  }
-  
-  def filter(xs: List[Int], p: Int => Boolean): List[Int] =
-    if (xs.isEmpty) xs
-    else if (p(xs.head)) xs.head :: filter(xs.tail, p)
-    else filter(xs.tail, p)
-  
-  def modN(n: Int)(x: Int) = 
-    ((x % n) == 0)
-
-  def sum(xs: List[Int]): Int = {
-    xs match {
-      case x :: tail => x + sum(tail)
-      case Nil => 0
-    }
   }
   
   def fibList() : List[Int] = {
